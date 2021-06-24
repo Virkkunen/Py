@@ -1,9 +1,6 @@
-import random
-
 from rich import print
 from rich.markdown import Markdown
 
-# x = random.randint(0,21)
 
 def tarot(x):
     if x == 0:
@@ -55,7 +52,5 @@ def tarot(x):
 
 while True:
     x = int(input("\n\nCard #: "))
-    if x >= 0 and x <= 21:         
-        tarot(x)
-    else:
-        break
+    if x >= 0 and x <= 21: tarot(x)
+    else: break
