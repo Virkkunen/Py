@@ -29,7 +29,7 @@ def pomodoro():
             mins = t // 60
             secs = t % 60
             timer = f"{mins}:{secs}"
-            print("\n"timer, end="\r")
+            print("\n"+timer, end="\r")
             time.sleep(1)
             t -= 1
 
@@ -42,7 +42,7 @@ def pomodoro():
             mins = t // 60 
             secs = t % 60
             timer = f"{mins}:{secs}"
-            print("\n"timer, end="\r")
+            print("\n"+timer, end="\r")
             time.sleep(1)
             t -= 1 
         breaks += 1
