@@ -1,10 +1,10 @@
-import time, os
+import time, os, sys
 
 version = "v0.1"
-choice = "y"
 
 def clear():
-    os.system('cls')
+    if os.name == "nt": os.system('cls')
+    if os.name == "posix": os.system('clear')
 
 clear()
 
