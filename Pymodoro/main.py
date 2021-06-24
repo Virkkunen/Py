@@ -5,6 +5,7 @@ version = "v0.2"
 # TODO
 # - remove cursor from countdown
 # - add total pomodoro cycles
+# - add alarms
 
 def clear():
     if os.name == "nt": os.system('cls')
