@@ -1,6 +1,6 @@
 import time, os, sys
 
-version = "v0.1"
+version = "v0.2"
 
 def clear():
     if os.name == "nt": os.system('cls')
@@ -23,7 +23,7 @@ def pomodoro():
     while breaks < 4:
         # work
         clear()
-        t = 25 * 60
+        t = 25 * 60 # 25 minutes
         print("Pymodoro " + version + "\n\nTotal breaks: " + str(breaks) + "\n\nWork time")
         while t:
             mins = t // 60
@@ -35,8 +35,8 @@ def pomodoro():
 
         # break
         clear()
-        if breaks == 3: t = 10 * 60
-        else: t = 5 * 60
+        if breaks == 3: t = 10 * 60 # 10 minutes on the 4th break
+        else: t = 5 * 60 # 5 minutes
         print("Pymodoro " + version + "\n\nTotal breaks: " + str(breaks) + "\n\nBreak time")
         while t: 
             mins = t // 60 
