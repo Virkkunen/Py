@@ -1,8 +1,8 @@
-import time, os, sys
+import time, os
 
 version = "v0.3"
 
-# TODO
+# TODO:
 # - remove cursor from countdown
 # - add total pomodoro cycles
 # - improve alarms
