@@ -9,7 +9,7 @@ version = "v0.3"
 
 def clear():
     if os.name == "nt": os.system('cls')
-    if os.name == "posix": os.system('clear')
+    elif os.name == "posix": os.system('clear')
 
 clear()
 
