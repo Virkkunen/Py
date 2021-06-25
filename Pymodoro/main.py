@@ -5,7 +5,7 @@ version = "v0.2"
 # TODO
 # - remove cursor from countdown
 # - add total pomodoro cycles
-# - add alarms
+# - improve alarms
 
 def clear():
     if os.name == "nt": os.system('cls')
@@ -37,6 +37,7 @@ def pomodoro():
             print(timer, end="\r")
             time.sleep(1)
             t -= 1
+        print('\a') # terminal bell
 
         # break
         clear()
@@ -51,6 +52,7 @@ def pomodoro():
             time.sleep(1)
             t -= 1 
         breaks += 1
+        print('\a') # terminal bell
 
 if __name__ == "__main__":
     main()
