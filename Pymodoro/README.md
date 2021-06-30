@@ -1,3 +1,3 @@
 # Pymodoro
-### v0.1
+### v0.3
 A simple Pomodoro timer written in Python.
